@@ -67,6 +67,9 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the School Management API!');
+});
 // Start Server
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
